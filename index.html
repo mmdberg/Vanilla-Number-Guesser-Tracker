@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Guesser</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Vanilla<span class='number'>Number</span>Guesser<span class='number'>Tracker</span> </h1>
+  </header>
+  <form class="pick-range" action="submit">
+      <label>Pick a range</label>
+      <input type="number" class="min" placeholder="Enter Min">
+      <input type="number" class="max" placeholder="Enter Max">
+      <button class="range-button" type="submit">Lock in range</button>
+  </form>
+   <main action="">
+     <form>
+       <label class='show-range' for="guess"></label>
+       <input id="guess" type="number" placeholder="Enter Guess">
+       <button class="submit-button" type="submit">Submit guess</button>
+       <button class="clear-button">Clear</button>
+     </form>
+     <div class="make-guess">
+       <p class="last-guess-was"></p>
+       <p class="last-guess"></p>
+       <p class="result"></p>
+       <button class="reset-button">Reset</button>
+     </div>
+     <div class="previous-guesses">
+      <h3>Previous Guesses:</h3>
+
+     </div>
+   </main>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
